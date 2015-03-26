@@ -1,0 +1,27 @@
+
+#include "stdafx.h"
+#include "Gaussian elimination.hpp"
+
+using namespace G_E;
+
+void main()
+{
+	//Initialize Row and Col value
+	r=4;
+	c=5;
+
+	//Set original matrix
+	for(int i=0;i<r;i++)
+		for(int j=0;j<c;j++)
+			d[i][j]=i*c+j+4;
+
+	//Gaussian elimination
+	gauss(1);
+
+	//Show result
+	debug_print();
+
+	system("pause");
+
+	return ;
+}
